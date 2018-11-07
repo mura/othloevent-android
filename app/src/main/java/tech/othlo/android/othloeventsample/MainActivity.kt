@@ -3,6 +3,7 @@ package tech.othlo.android.othloeventsample
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -13,8 +14,9 @@ class MainActivity : AppCompatActivity() {
 
         val textView = findViewById<TextView>(R.id.textView)
         val button = findViewById<Button>(R.id.button)
+        val editText = findViewById<EditText>(R.id.editText)
         button.setOnClickListener { _ ->
-            textView.text = "Yohei Murayama"
+            textView.text = editText.text
         }
     }
 }
