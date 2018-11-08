@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         val secondButton = findViewById<Button>(R.id.secondButton)
         secondButton.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("name", "Yohei Murayama")
             startActivity(intent)
         }
     }
