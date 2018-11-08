@@ -1,6 +1,7 @@
 package tech.othlo.android.othloeventsample
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -32,6 +33,12 @@ class MainActivity : AppCompatActivity() {
             settings.edit()
                 .putString("text", inputText)
                 .apply()
+        }
+
+        val secondButton = findViewById<Button>(R.id.secondButton)
+        secondButton.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
         }
     }
 }
