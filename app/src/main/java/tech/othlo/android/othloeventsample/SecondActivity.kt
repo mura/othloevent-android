@@ -19,6 +19,6 @@ class SecondActivity : AppCompatActivity() {
             "7月","8月","9月","10月","11月","12月")
         //val months = (1..12).map { "${it}月" }
         //val months = (2004..2018).flatMap { y -> (1..12).map { m -> "${y}年${m}月"} }
-        recyclerView.adapter = MonthRecycleViewAdapter(months)
+        recyclerView.adapter = MonthRecyclerViewAdapter(months)
     }
 }
